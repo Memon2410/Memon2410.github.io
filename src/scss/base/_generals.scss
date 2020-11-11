@@ -1,0 +1,43 @@
+:root {
+  font-size: 62.5%;
+}
+
+.no-select {
+  @include prefix(user-select, none);
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  font-family: 'graphik', sans-serif;
+}
+
+body {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+
+  a,
+  button {
+    @include prefix(user-select, none);
+    position: relative;
+    margin: 4rem 0;
+    cursor: pointer;
+  }
+
+  button {
+    padding: .5rem 2rem;
+  }
+
+  main {
+    width: 100%;
+    height: 100vh;
+
+    .content {
+      width: 85%;
+      margin: 0 auto;
+    }
+  }
+}
