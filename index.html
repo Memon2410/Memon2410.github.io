@@ -24,10 +24,12 @@
 
   <main class="home">
     <div class="content">
-      <button>Webcam</button>
-      <br>
-      <input id="input-image" type="file" accept="image/*" capture="filesystem"></input>
-      <img id="load-image" style='display: none' src="">
+      <div class="container-buttons">
+        <button>Webcam</button>
+        <br><br>
+        <input id="input-image" type="file" accept="image/*" capture="filesystem"></input>
+      </div>
+        <img id="load-image" style='display: none' src="">
 
       <div id='artpaintingContainer'>
         <canvas width="1024" height="1024" id='jeeFaceFilterCanvas' class='artPainting'></canvas>
