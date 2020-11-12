@@ -26,8 +26,8 @@
     <div class="content">
       <button>Webcam</button>
       <br>
-      <input type="file"></input>
-      <img src="" height="200" alt="Image preview...">
+      <input id="input-image" type="file"></input>
+      <img id="load-image" style='display: none' src="">
 
       <div id='artpaintingContainer'>
         <canvas width="1024" height="1024" id='jeeFaceFilterCanvas' class='artPainting'></canvas>
@@ -35,6 +35,7 @@
     </div>
   </main>
 
-  <script src="./helpers/jeelizFaceFilter.module.js"></script> 
+  <script src="./helpers/jeelizFaceFilter.module.js"></script>
+  <script src="./helpers/Canvas2DDisplay.js"></script>
 <script type="text/javascript" src="js/entry.js"></script></body>
 </html>
